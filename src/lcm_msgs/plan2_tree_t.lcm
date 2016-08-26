@@ -1,0 +1,7 @@
+
+struct plan2_tree_t
+{
+    int64_t  timestamp;
+    int32_t  n;
+    plan2_table_t rtable[n];
+}

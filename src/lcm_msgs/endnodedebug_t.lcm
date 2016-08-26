@@ -1,0 +1,11 @@
+struct endnodedebug_t
+{
+      byte    nodeid;
+      int16_t n_xbee_pkts_sent;
+      int32_t n_xbee_bytes_sent;
+      int16_t n_xbee_pkts_rcv;
+      int32_t n_xbee_bytes_rcv;
+      int64_t timestamp;
+      int16_t last_flow_notify_time; /// seconds until last
+      byte     manet_alive;
+}

@@ -1,0 +1,7 @@
+struct pose_t
+{
+    float  timestamp;
+    float  latitude;
+    float  longitude; 
+    float  altitude;
+}

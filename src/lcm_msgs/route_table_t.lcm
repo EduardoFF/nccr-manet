@@ -1,0 +1,6 @@
+struct route_table_t
+{
+    string node;
+    int32_t n;
+    route_entry_t entries[n];
+}

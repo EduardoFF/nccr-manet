@@ -1,0 +1,7 @@
+
+struct plan2_table_t
+{
+    string node;
+    int32_t n;
+    plan2_entry_t entries[n];
+}

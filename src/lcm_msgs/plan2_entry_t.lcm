@@ -1,0 +1,10 @@
+
+struct plan2_entry_t
+{
+    float   latitude;	
+    float   longitude;
+    float   altitude;    
+    string  action;
+    string  option;
+    int16_t timestamp; 
+}

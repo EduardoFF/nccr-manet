@@ -1,0 +1,5 @@
+struct route_entry_t
+{
+    string  node;
+    int16_t weight;     
+}

@@ -1,0 +1,6 @@
+struct plan_waypoint_t
+{
+    float  latitude;	
+    float  longitude;
+    float  altitude;   
+}

@@ -1,0 +1,7 @@
+struct pos_gps_t
+{
+    byte     robotid;
+    float  latitude;	
+    float  longitude;
+    float  altitude;   
+}

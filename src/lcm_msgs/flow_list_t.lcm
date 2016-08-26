@@ -1,0 +1,8 @@
+struct flow_list_t
+{
+    string addr;
+    int64_t  timestamp;
+    int32_t n;
+    flow_entry_t flows[n];
+}
+

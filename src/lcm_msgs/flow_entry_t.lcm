@@ -1,0 +1,9 @@
+struct flow_entry_t
+{
+    string  src_addr;
+    string  dst_addr;
+    int32_t pkt_count;
+    int32_t byte_count;
+    double  data_rate;
+    int64_t last_activity;
+}

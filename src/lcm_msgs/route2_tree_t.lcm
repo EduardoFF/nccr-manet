@@ -1,0 +1,7 @@
+
+struct route2_tree_t
+{
+    int64_t  timestamp;
+    int32_t  n;
+    route2_table_t rtable[n];
+}
