@@ -4,7 +4,6 @@
 #include <iostream>
 #include <stdlib.h>
 #include "xbee_app_data.h"
-#include "timer.h"
 #include <csignal>
 #include <glog/logging.h>
 #include "routing_driver.h"

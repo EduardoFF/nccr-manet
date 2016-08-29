@@ -4,7 +4,6 @@
 #include <iostream>
 #include <stdlib.h>
 #include "xbee_app_data.h"
-#include "timer.h"
 #include <csignal>
 #define DISABLE_GLOG 1
 #include "flow_notifier.h"
