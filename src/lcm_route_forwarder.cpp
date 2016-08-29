@@ -233,7 +233,7 @@ int main(int argc, char **argv)
   // as the dynamic_reconfigure::Server does this for you.
   ros::NodeHandle private_node_handle_("~");
   private_node_handle_.param("rate", rate, int(1));
-  private_node_handle_.param("lcm_topic", lcm_topic, string("RNP"));
+  private_node_handle_.param("lcm_topic", lcm_topic, string("RNP2"));
   private_node_handle_.param("out_topic", out_topic, string("out_routes"));
 
 
