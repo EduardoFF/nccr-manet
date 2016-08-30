@@ -11,7 +11,7 @@
 	</node>
 
 	<node pkg="nccr_manet" name="lcm_flow_forwarder" type="lcm_flow_forwarder">
-	      <param name="address_book" value="/root/addressbook"/>
+	      <param name="address_book" value="$(find nccr_manet)/path/file.txt"/>
 	      <remap from="out_flows" to="flows"/>
 	</node>
 
