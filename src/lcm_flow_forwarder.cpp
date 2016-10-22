@@ -217,11 +217,13 @@ int main(int argc, char **argv)
   private_node_handle_.param("rate", rate, int(1));
   int nodeId;
   string addrBook;
+  string lcm_url;
   private_node_handle_.param("nodeid", nodeId, int(1));
   g_nodeId = static_cast<uint8_t>(nodeId);
   private_node_handle_.param("lcm_topic", lcm_topic, string("mineiflow"));
   private_node_handle_.param("out_topic", out_topic, string("out_flows"));
   private_node_handle_.param("address_book", addrBook, string("none"));
+  private_node_handle_.param("lcm_url", lcm_url, string("udpm://239.255.76.67:7667?ttl=1"));
 
 
   // Tell ROS how fast to run this node.
@@ -230,7 +232,7 @@ int main(int argc, char **argv)
   flow_pub =
     nh.advertise<nccr_manet_msgs::FlowList>(out_topic.c_str(), 10);
 
-  g_flowNotifier = new FlowNotifier("udpm://239.255.76.67:7667?ttl=0", "mineiflow", true);
+  g_flowNotifier = new FlowNotifier(lcm_url.c_str(), lcm_topic.c_str(), true);
   
     if( addrBook != "none" )
       g_flowNotifier->readAddressBook(addrBook);
